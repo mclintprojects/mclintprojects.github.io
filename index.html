@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Mbah Clinton</title>
-  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Pontano+Sans" rel="stylesheet">
+  <meta name="theme-color" content="#2f3061">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Ubuntu" rel="stylesheet">
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,86 +16,94 @@
   <div class="navbar navbar-fixed-top">
     <ul class="nav nav-pills pull-right">
       <li>
-        <a href="#about">ABOUT</a>
+        <a href="#about">About</a>
       </li>
       <li>
-        <a href="#work">WORK</a>
+        <a href="#work">Work</a>
       </li>
       <li>
-        <a href="#contact">CONTACT</a>
+        <a href="#contact">Contact</a>
       </li>
     </ul>
   </div>
   <div id="main" class="container-fluid">
+    <a id="mouseDown" href="#work">
+      <img src="./img/arrow-down.svg" />
+    </a>
     <div id="about">
       <div class="text-center">
         <h1 id="hello">Hello!</h1>
-        <h4>I'm Mbah Clinton.</h4>
+        <h4>I'm Mbah Clinton</h4>
         <h5>A FREELANCE WEB & MOBILE DEVELOPER BASED IN GHANA</h5>
         <div class="navbar">
           <div id="social">
             <ul class="nav nav-pills">
               <li>
                 <a href="https://codepen.io/mclint_" target="_blank">
-                  <img class="social-icons" src="https://image.flaticon.com/icons/svg/51/51767.svg" />
+                  <img class="social-icons" src="./img/codepen.svg" />
                 </a>
               </li>
               <li>
                 <a href="https://github.com/mclintprojects" target="_blank" target="_blank" target="_blank">
-                  <img class="social-icons" src="https://image.flaticon.com/icons/svg/23/23957.svg" />
+                  <img class="social-icons" src="./img/github.svg" />
                 </a>
               </li>
               <li>
                 <a href="https://twitter.com/mclint_" target="_blank" target="_blank">
-                  <img class="social-icons" src="https://image.flaticon.com/icons/svg/747/747453.svg" />
+                  <img class="social-icons" src="./img/twitter.svg" />
                 </a>
               </li>
               <li>
                 <a href="https://instagram.com/m.clint" target="_blank">
-                  <img class="social-icons" src="https://image.flaticon.com/icons/svg/87/87390.svg" />
+                  <img class="social-icons" src="./img/instagram.svg" />
                 </a>
               </li>
             </ul>
-
-            <a id="mouseDown" href="#work">
-              <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/512238-200.png" />
-            </a>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="work" class="text-center">
-      <h5>What I've worked on</h5>
-      <div class="row">
-        <div class="lab-item col-xs-4" data-link="https://play.google.com/store/apps/details?id=com.alansa.ideabag2">
+  <div id="sub-content">
+    <div id="work">
+      <h5>My work</h5>
+      <div class="lab">
+        <div class="lab-item" data-link="https://play.google.com/store/apps/details?id=com.alansa.ideabag2">
           <img src="https://lh3.googleusercontent.com/3clg6rze7ZvI6QhUx13dFQCjSKIvWxZ9I3ptEbsGs3Vea1Y8EBWNYMJrsnYVZY8Tn8Fp=w300" class="img-responsive img-rounded"
           />
           <h4>Programming Ideas</h4>
+          <font>Provides programmers of all proficiency levels ideas for pet projects to work on when they are looking to increase
+            their proficiency in a particular programming language.</font>
         </div>
-        <div class="lab-item col-xs-4" data-link="https://play.google.com/store/apps/details?id=com.alansa.cewp">
+        <div class="lab-item" data-link="https://play.google.com/store/apps/details?id=com.alansa.cewp">
           <img src="https://lh3.googleusercontent.com/EG7FIDF5vzokcQa7jghIXNl45entg_pTnQoqKVQwOf8XRXPJsQc19Np-fAr8wcNTuA=w300" class="img-responsive img-rounded"
           />
           <h4>CEWP</h4>
+          <font>Find certified electrical wiring professionals around you.</font>
+          <p class="client-badge">CONTRACT</p>
         </div>
-        <div class="lab-item col-xs-4" data-link="https://play.google.com/store/apps/details?id=com.ghalani.app">
+        <div class="lab-item" data-link="https://play.google.com/store/apps/details?id=com.ghalani.app">
           <img src="https://lh3.googleusercontent.com/foHqXbF1AeXHtwv3vNNCEzcZf-eM6kPpOQkvUBpcqddBop_8bUqKFa1YhIlSIp9zaXDi=w300" class="img-responsive img-rounded"
           />
           <h4>Ghalani</h4>
+          <font>Farm management system that helps farmers or agribusinesses to organize their workforce, monitor the flow and use
+            of money on their farm(s), and keep track of the yields and incomes from each farm.</font>
+          <p class="client-badge">CONTRACT</p>
         </div>
-      </div>
 
-      <button id="viewMoreBtn" class="btn app-btn">View more</button>
+        <button id="viewMoreBtn" class="btn app-btn">View more</button>
+      </div>
     </div>
 
-    <div id="contact" class="container-fluid text-center">
+    <div id="contact">
       <h5>Get in touch</h5>
-      <div class="row">
-        <div class="col-xs-2 col-sm-4">
+      <div id="contact-container">
+        <div>
           <p id="contact-email">clintonmbah44@gmail.com</p>
           <p id="contact-phone">+233273021862</p>
         </div>
-        <div class="col-xs-10 col-sm-8" id="contact-form">
+        <div id="contact-form">
           <textarea id="contact-msg"></textarea>
           <br>
           <button id="send-btn" class="btn app-btn">Send</button>
