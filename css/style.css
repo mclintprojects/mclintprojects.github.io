@@ -1,7 +1,7 @@
 :root {
 	--primary-color: #f0544f;
 	--accent-color: #f4d58d;
-	--text-secondary: rgba(244, 213, 141, 0.8);
+	--text-secondary: rgba(244, 213, 141, 0.54);
 	--text-primary: rgba(244, 213, 141, 0.8);
 }
 
@@ -38,7 +38,7 @@ body {
 }
 
 #about {
-	color: var(--text-secondary);
+	color: var(--text-primary);
 }
 
 .app-btn {
@@ -118,7 +118,7 @@ body {
 #work h5,
 #contact h5 {
 	font-size: 25px;
-	color: var(--text-secondary);
+	color: var(--text-primary);
 	margin: 0px 0px 8px 0px;
 	font-weight: bold;
 }
@@ -197,7 +197,7 @@ body {
 
 #contact-phone {
 	font-size: 13px;
-	color: var(--text-primary);
+	color: var(--text-secondary);
 }
 
 #contact-msg {
@@ -250,5 +250,17 @@ body {
 
 	.lab-item img {
 		width: 56px;
+	}
+
+	@keyframes mouseanim {
+		from {
+			top: calc(100vh - 150px);
+			opacity: 0;
+		}
+
+		to {
+			top: calc(100vh - 110px);
+			opacity: 1;
+		}
 	}
 }
