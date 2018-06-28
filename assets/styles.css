@@ -16,7 +16,12 @@
 }
 
 body {
-	background-color: var(--primary-color);
+	background: linear-gradient(
+		45deg,
+		var(--primary-color),
+		92%,
+		var(--accent-color)
+	);
 	color: var(--primary-text-color);
 }
 
