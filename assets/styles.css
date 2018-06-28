@@ -84,6 +84,17 @@ body {
 	border-width: 2px;
 }
 
+#social-icons {
+	list-style-type: none;
+	margin-top: 16px;
+}
+
+.social-icon {
+	width: 16px;
+	height: 16px;
+	margin-right: 16px;
+}
+
 .flex {
 	display: flex;
 	flex-wrap: wrap;
@@ -168,6 +179,7 @@ body {
 .client-website {
 	color: var(--secondary-text);
 }
+
 @media screen and (max-width: 568px) {
 	#home,
 	#works-container {
