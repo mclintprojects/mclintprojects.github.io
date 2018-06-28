@@ -19,7 +19,7 @@ body {
 	background: linear-gradient(
 		45deg,
 		var(--primary-color) 75%,
-		var(--accent-color) 100%
+		var(--accent-color) 0%
 	);
 	color: var(--primary-text-color);
 }
@@ -185,7 +185,15 @@ body {
 	color: var(--secondary-text);
 }
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 567px) {
+	body {
+		background: linear-gradient(
+			45deg,
+			var(--primary-color) 75%,
+			var(--accent-color) 100%
+		);
+	}
+
 	#home,
 	#works-container {
 		width: 85%;
