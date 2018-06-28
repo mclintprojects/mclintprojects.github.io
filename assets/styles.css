@@ -18,9 +18,8 @@
 body {
 	background: linear-gradient(
 		45deg,
-		var(--primary-color),
-		92%,
-		var(--accent-color)
+		var(--primary-color) 75%,
+		var(--accent-color) 100%
 	);
 	color: var(--primary-text-color);
 }
