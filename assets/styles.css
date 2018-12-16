@@ -33,7 +33,7 @@ body {
 
 #home > div {
 	position: relative;
-	animation: slide-down 1s 0.1s ease-out;
+	animation: slide-down 0.7s 0.1s ease-out;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -56,12 +56,23 @@ body {
 	}
 }
 
+@keyframes rounden {
+	from {
+		border-radius: 1rem;
+	}
+
+	to {
+		border-radius: 50%;
+	}
+}
+
 #avatar {
 	width: 20rem;
 	height: 20rem;
 	object-fit: cover;
 	border: 0.4rem solid var(--accent-color);
 	border-radius: 3rem;
+	animation: rounden 3s alternate-reverse infinite;
 }
 
 .title {
