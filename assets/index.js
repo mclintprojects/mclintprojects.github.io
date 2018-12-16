@@ -1,9 +1,11 @@
-$(document).ready(setupUI);
+window.onload = function() {
+	let list = document.getElementById('work-list');
+	list.addEventListener('click', onProjectClicked);
+};
 
-function setupUI() {
-	$('.work-list-item').on('click', function() {
-		const item = $(this);
-		const url = item[0].dataset.link;
-		window.open(url, '_blank');
-	});
+function onProjectClicked(e) {
+	const url = e.target.dataset.link
+		? e.target.dataset.link
+		: e.target.parentNode.dataset.link;
+	window.open(url, '_blank');
 }

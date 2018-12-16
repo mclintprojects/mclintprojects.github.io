@@ -1,254 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Mbah Clinton</title>
+		<link
+			href="https://fonts.googleapis.com/css?family=Muli|Cabin"
+			rel="stylesheet"
+		/>
+		<link href="./assets/styles.css" rel="stylesheet" />
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mbah Clinton</title>
-    <link href="https://fonts.googleapis.com/css?family=Muli|Cabin" rel="stylesheet">
-    <link href="./assets/styles.css" rel="stylesheet" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-</head>
+	<body>
+		<section id="home">
+			<div>
+				<img id="avatar" src="./assets/images/Snapchat-1195331476.png" />
+				<p id="label-name">Mbah Clinton</p>
+				<p id="label-job-title">Full-stack engineer</p>
+				<p id="label-description">Accra, Ghana.</p>
+				<div id="social-icons" class="flex">
+					<div>
+						<a href="https://twitter.com/mclint_" target="_blank">
+							<img class="social-icon" src="./assets/images/twitter.svg" />
+						</a>
+					</div>
+					<div>
+						<a href="https://github.com/mclintprojects" target="_blank">
+							<img class="social-icon" src="./assets/images/github.svg" />
+						</a>
+					</div>
+					<div>
+						<a href="https://medium.com/@mclint_" target="_blank">
+							<img class="social-icon" src="./assets/images/medium.svg" />
+						</a>
+					</div>
+					<div>
+						<a href="https://codepen.io/mclint_" target="_blank">
+							<img class="social-icon" src="./assets/images/codepen.svg" />
+						</a>
+					</div>
+					<div>
+						<a href="mailto:clintonmbah44@gmail.com" target="_blank">
+							<img class="social-icon" src="./assets/images/email.svg" />
+						</a>
+					</div>
+				</div>
 
-<body>
-    <section id="home">
-        <img id="avatar" src="./assets/images/Snapchat-1195331476.png" />
-        <p id="label-name">Mbah Clinton</p>
-        <p id="label-job-title">Full stack engineer</p>
-        <p id="label-description">Accra, Ghana.</p>
-        <div id="social-icons" class="flex">
-            <div>
-                <a href="https://twitter.com/mclint_" target="_blank">
-                    <img class="social-icon" src="./assets/images/twitter.svg" />
-                </a>
-            </div>
-            <div>
-                <a href="https://github.com/mclintprojects" target="_blank">
-                    <img class="social-icon" src="./assets/images/github.svg" />
-                </a>
-            </div>
-            <div>
-                <a href="https://medium.com/@mclint_" target="_blank">
-                    <img class="social-icon" src="./assets/images/medium.svg" />
-                </a>
-            </div>
-            <div>
-                <a href="https://codepen.io/mclint_" target="_blank">
-                    <img class="social-icon" src="./assets/images/codepen.svg" />
-                </a>
-            </div>
-            <div>
-                <a href="mailto:clintonmbah44@gmail.com" target="_blank">
-                    <img class="social-icon" src="./assets/images/email.svg" />
-                </a>
-            </div>
-        </div>
+				<div id="home-buttons-container" class="flex">
+					<a
+						id="button-view-resume"
+						class="button"
+						target="_blank"
+						href="https://docs.google.com/document/d/1B9Gc_JAD85L9k4cIeULG3Vn2K3yEpdcZAxfZcwzcRgo/edit"
+						>View resume
+					</a>
+					<a id="button-know-more" class="button button-hollow" href="#works"
+						>View portfolio</a
+					>
+				</div>
+			</div>
+		</section>
 
-        <div id="home-buttons-container" class="flex">
-            <a id="button-view-resume" class="button" target="_blank" href="https://docs.google.com/document/d/1B9Gc_JAD85L9k4cIeULG3Vn2K3yEpdcZAxfZcwzcRgo/edit">View
-                resume
-            </a>
-            <a id="button-know-more" class="button button-hollow" href="#works">What I've worked on</a>
-        </div>
-    </section>
+		<section id="works">
+			<div id="works-container">
+				<h3 id="label-work-title" class="title">Portfolio</h3>
+				<ul id="work-list">
+					<li class="work-list-item" data-link="https://peralta.app">
+						<p class="project-name">Peralta</p>
+						<p class="project-type">
+							Client -
+							<span>
+								<a
+									class="client-website"
+									href="http://africaforesight.com"
+									target="_blank"
+									>Africa Foresight Group
+								</a>
+							</span>
+						</p>
+						<p class="project-description">
+							As part of a 6-week internship, I worked with a senior consultant
+							to deliver Peralta. It's a Vue + Rails 5 app that currently powers
+							talent management for Africa Foresight Group's talent pool of over
+							50 consultants. I spearheaded the engineering effort to migrate
+							the application's frontend architecture from Rails MVC to Vue SPA.
+						</p>
+					</li>
 
-    <section id="works">
-        <div id="works-container">
-            <p id="label-work-title" class="title">WHAT I'VE WORKED ON</p>
-            <ul id="work-list">
-                <li class="work-list-item" data-link="https://peralta.app">
-                    <p class="project-name">Peralta</p>
-                    <p class="project-type">Contract -
-                        <span>
-                            <a class="client-website" href="http://africaforesight.com" target="_blank">Africa Foresight
-                                Group
-                            </a>
-                        </span>
-                    </p>
-                    <div class="stacks flex flex-row">
-                        <p class="stack">Ruby</p>
-                        <p class="stack">Javascript</p>
-                        <p class="stack">Rails 5</p>
-                        <p class="stack">Vue.js</p>
-                        <p class="stack">Management System</p>
-                    </div>
-                </li>
+					<li class="work-list-item" data-link="https://anyato.live/">
+						<p class="project-name">Anyato.live</p>
+						<p class="project-type">
+							Client -
+							<span>
+								<a
+									class="client-website"
+									href="http://twitter/com/Anyaato"
+									target="_blank"
+									>Nnanna Chioma
+								</a>
+							</span>
+						</p>
+						<p class="project-description">
+							Chioma is a friend. This is a personal website that I designed and
+							developed with her while teaching her how to code. It features a
+							Glitch Node.JS API I built that (was
+							<a
+								href="http://culture-zine.glitch.me/culture/this-week-on-glitch-week-34-2018/"
+								>featured</a
+							>
+							by Glitch) retrieves any Medium user's posts.
+						</p>
+					</li>
 
-                <li class="work-list-item" data-link="https://play.google.com/store/apps/details?id=com.alansa.ideabag2">
-                    <p class="project-name">Programming Ideas 2</p>
-                    <p class="project-type">Personal</p>
-                    <div class="stacks flex flex-row">
-                        <p class="stack">Kotlin</p>
-                        <p class="stack">Mobile</p>
-                        <p class="stack">Android</p>
-                        <p class="stack">REST API</p>
-                        <p class="stack">Firebase Auth</p>
-                        <p class="stack">Firebase Database</p>
-                        <p class="stack">Open source</p>
-                    </div>
-                </li>
+					<li
+						class="work-list-item"
+						data-link="https://play.google.com/store/apps/details?id=com.alansa.cewp"
+					>
+						<p class="project-name">CEWP</p>
+						<p class="project-type">
+							Client -
+							<span>
+								<a
+									class="client-website"
+									href="http://www.cewp.energycom.gov.gh/"
+									target="_blank"
+									>CEWP</a
+								>
+							</span>
+						</p>
+						<p class="project-description">
+							CEWP is a project I worked on for the Energy Commission of Ghana
+							as part of a campaign to get Ghanaians to use only Certified
+							Electricians for electrical work. It lists the over 6000 Certified
+							Electricians in Ghana and allows you to search for and contact
+							those nearest to you. I built both the Android app and the ASP.NET
+							WEB API backend that powers the location-aware electrician search
+							feature.
+						</p>
+					</li>
 
-                <li class="work-list-item" data-link="https://ideabag2.netlify.com">
-                    <p class="project-name">Programming Ideas 2 (WEB)</p>
-                    <p class="project-type">Personal</p>
-                    <div class="stacks flex flex-row">
-                        <p class="stack">Javascript</p>
-                        <p class="stack">Vue.js</p>
-                        <p class="stack">Web</p>
-                        <p class="stack">REST API</p>
-                        <p class="stack">Firebase Auth</p>
-                        <p class="stack">Firebase Database</p>
-                        <p class="stack">Offline-first</p>
-                        <p class="stack">Open source</p>
-                    </div>
-                </li>
+					<li
+						class="work-list-item"
+						data-link="https://play.google.com/store/apps/details?id=com.alansa.ideabag2"
+					>
+						<p class="project-name">Programming Ideas 2</p>
+						<p class="project-type">Personal</p>
+						<p class="project-description">
+							When I was starting out with programming, I was always looking for
+							ideas of what to make to increase my proficiency. So I built
+							IdeaBag. It currently has over 150 ideas and growing, 3 difficulty
+							levels to cater to varying degrees of proficiency and a
+							well-received UI I designed. It turns out that other programmers
+							are facing my initial pain point. IdeaBag currently has more than
+							130,000 installs and an enviable 4.6 rating after 500+ reviews in
+							the Google PlayStore.
+						</p>
+					</li>
 
-                <li class="work-list-item" data-link="https://play.google.com/store/apps/details?id=com.alansa.shark">
-                    <p class="project-name">Shark</p>
-                    <p class="project-type">Personal</p>
-                    <div class="stacks flex flex-row">
-                        <p class="stack">Kotlin</p>
-                        <p class="stack">Mobile</p>
-                        <p class="stack">Android</p>
-                        <p class="stack">REST API</p>
-                        <p class="stack">Node.js</p>
-                        <p class="stack">Express.js</p>
-                        <p class="stack">MongoDB</p>
-                        <p class="stack">Full-stack</p>
-                    </div>
-                </li>
+					<li class="work-list-item" data-link="https://ideabag2.netlify.com">
+						<p class="project-name">Programming Ideas 2 (WEB)</p>
+						<p class="project-type">Personal</p>
+						<p class="project-description">
+							Several users rightfully complained about IdeaBag being an
+							Android-only application. In an effort to appease those
+							complaints, I ported IdeaBag to the web with Vue.JS. After
+							open-sourcing it, contributors have brought it to feature-parity
+							with its Android counterpart.
+						</p>
+					</li>
 
-                <li class="work-list-item" data-link="https://present-sir.herokuapp.com/">
-                    <p class="project-name">Present, Sir (WEB)</p>
-                    <p class="project-type">Personal</p>
-                    <div class="stacks flex flex-row">
-                        <p class="stack">Rails 5</p>
-                        <p class="stack">Vue.js</p>
-                        <p class="stack">Webpacker</p>
-                        <p class="stack">Open source</p>
-                        <p class="stack">Full-stack</p>
-                    </div>
-                </li>
-
-                <li class="work-list-item" data-link="https://anyato.live/">
-                    <p class="project-name">Anyato.live</p>
-                    <p class="project-type">Personal</p>
-                    <div class="stacks flex flex-row">
-                        <p class="stack">Vue.js</p>
-                        <p class="stack">Static</p>
-                        <p class="stack">REST API</p>
-                        <p class="stack">Axios</p>
-                        <p class="stack">Node.js</p>
-                        <p class="stack">Express</p>
-                        <p class="stack">Glitch</p>
-                    </div>
-                </li>
-
-                <li class="work-list-item" data-link="https://play.google.com/store/apps/details?id=com.alansa.cewp">
-                    <p class="project-name">CEWP</p>
-                    <p class="project-type">Contract -
-                        <span>
-                            <a class="client-website" href="http://www.cewp.energycom.gov.gh/" target="_blank">CEWP</a>
-                        </span>
-                    </p>
-                    <div class="stacks flex flex-row">
-                        <p class="stack">Xamarin.Android</p>
-                        <p class="stack">Mobile</p>
-                        <p class="stack">REST API</p>
-                        <p class="stack">ASP.NET</p>
-                        <p class="stack">MSSQL</p>
-                        <p class="stack">Certified Electricians</p>
-                        <p class="stack">Social</p>
-                    </div>
-                </li>
-
-                <li class="work-list-item" data-link="https://github.com/mclintprojects/present-sir">
-                    <p class="project-name">Present, Sir</p>
-                    <p class="project-type">Hackathon (2nd place) -
-                        <span>
-                            <a class="client-website" href="https://twitter.com/forloopghana?lang=en" target="_blank">forLOOP
-                                Ghana UG Hackathon</a>
-                        </span>
-                    </p>
-                    <div class="stacks flex flex-row">
-                        <p class="stack">Kotlin</p>
-                        <p class="stack">Mobile</p>
-                        <p class="stack">Android</p>
-                        <p class="stack">REST API</p>
-                        <p class="stack">ASP.NET WEB API</p>
-                        <p class="stack">Lite.DB</p>
-                        <p class="stack">USSD</p>
-                        <p class="stack">Full-stack</p>
-                        <p class="stack">Open source</p>
-                    </div>
-                </li>
-
-                <li class="work-list-item" data-link="https://github.com/mclintprojects/present-sir">
-                    <p class="project-name">Prepster</p>
-                    <p class="project-type">Hackathon -
-                        <span>
-                            <a class="client-website" href="https://twitter.com/figma_africa?lang=en" target="_blank">FigmaXGithub
-                                Hackathon
-                            </a>
-                        </span>
-                    </p>
-                    <div class="stacks flex flex-row">
-                        <p class="stack">Vue.js</p>
-                        <p class="stack">Rails 5</p>
-                        <p class="stack">REST API</p>
-                        <p class="stack">Full-stack</p>
-                        <p class="stack">Open source</p>
-                        <p class="stack">Educational</p>
-                        <p class="stack">Quiz</p>
-                    </div>
-                </li>
-
-                <li class="work-list-item" data-link="https://polly-app.netlify.com/">
-                    <p class="project-name">Polly</p>
-                    <p class="project-type">Personal</p>
-                    <div class="stacks flex flex-row">
-                        <p class="stack">Javascript</p>
-                        <p class="stack">Vue.js</p>
-                        <p class="stack">Web</p>
-                        <p class="stack">REST API</p>
-                        <p class="stack">Node.js</p>
-                        <p class="stack">Express.js</p>
-                        <p class="stack">MongoDB</p>
-                        <p class="stack">Full-stack</p>
-                        <p class="stack">Open source</p>
-                    </div>
-                </li>
-
-                <li class="work-list-item" data-link="https://gh-holidays.netlify.com/">
-                    <p class="project-name">GH Next Holiday</p>
-                    <p class="project-type">Personal</p>
-                    <div class="stacks flex flex-row">
-                        <p class="stack">Javascript</p>
-                        <p class="stack">Vue.js</p>
-                        <p class="stack">Mixins</p>
-                        <p class="stack">Open source</p>
-                    </div>
-                </li>
-
-                <li class="work-list-item" data-link="https://silverbird-scraper.netlify.com/">
-                    <p class="project-name">Silverbird Cinema Accra Scraper</p>
-                    <p class="project-type">Personal</p>
-                    <div class="stacks flex flex-row">
-                        <p class="stack">Vue.js</p>
-                        <p class="stack">Node.js</p>
-                        <p class="stack">Express</p>
-                        <p class="stack">Glitch</p>
-                        <p class="stack">Website scraper</p>
-                        <p class="stack">Full-stack</p>
-                        <p class="stack">Silverbird Cinemas</p>
-                        <p class="stack">Open source</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <script type="text/javascript" src="./assets/index.js"></script>
-</body>
-
+					<li
+						class="work-list-item"
+						data-link="https://github.com/mclintprojects/present-sir"
+					>
+						<p class="project-name">Present, Sir</p>
+						<p class="project-type">
+							Hackathon (2nd place) -
+							<span>
+								<a
+									class="client-website"
+									href="https://twitter.com/forloopghana?lang=en"
+									target="_blank"
+									>forLOOP Ghana UG Hackathon</a
+								>
+							</span>
+						</p>
+						<p class="project-description">
+							Over the course of 24 hours at the maiden edition of forLOOP
+							Ghana's hackathon, I developed "Present, Sir". It is a class
+							USSD-based class attendance tracker built using Africa's Talking's
+							USSD API. I built the Xamarin.Android based app and used ASP.NET
+							MVC5 + LiteDB for the backend.
+						</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<footer><p>Copyright &copy; Mbah Clinton. 2018.</p></footer>
+		<script type="text/javascript" src="./assets/index.js"></script>
+	</body>
 </html>

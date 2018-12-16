@@ -1,5 +1,5 @@
 :root {
-	--primary-color: #2d3047;
+	--primary-color: #0f0f16;
 	--primary-color-light: hsl(233, 22%, 33%);
 	--accent-color: #ed217c;
 	--accent-color-light: hsl(333, 85%, 63%);
@@ -7,6 +7,7 @@
 	--primary-text-color-light: rgba(255, 255, 255, 0.54);
 	--secondary-text: rgba(0, 0, 0, 0.8);
 	--secondary-text-light: rgba(0, 0, 0, 0.54);
+	font-size: 60%;
 }
 
 * {
@@ -16,33 +17,51 @@
 }
 
 body {
-	background: linear-gradient(
-		45deg,
-		var(--primary-color) 75%,
-		var(--accent-color) 0%
-	);
+	background: var(--primary-color);
 	color: var(--primary-text-color);
 }
 
 #home {
-	height: 100vh;
+	height: calc(100vh - 6.8rem);
+	padding: 3rem;
+	border: 0.5rem solid var(--accent-color);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin: auto;
+	align-items: center;
 }
 
-#home,
+#home > div {
+	position: relative;
+	animation: slide-down 1s 0.1s ease-out;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 #works-container {
-	width: 40%;
+	width: 80%;
+}
+
+@keyframes slide-down {
+	from {
+		top: -40rem;
+		opacity: 0;
+	}
+
+	to {
+		top: 0rem;
+		opacity: 1;
+	}
 }
 
 #avatar {
-	width: 200px;
-	height: 200px;
+	width: 20rem;
+	height: 20rem;
 	object-fit: cover;
-	border: 4px solid hsl(233, 22%, 20%);
-	border-radius: 10px;
+	border: 0.4rem solid var(--accent-color);
+	border-radius: 3rem;
 }
 
 .title {
@@ -51,28 +70,32 @@ body {
 }
 
 #label-name {
-	font-size: 56px;
+	font-size: 5.6rem;
 	color: var(--accent-color);
-	margin-top: 20px;
+	margin-top: 2rem;
 }
 
 #label-job-title {
-	font-size: 18px;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	letter-spacing: 0.4rem;
+	margin-bottom: 0.8rem;
 }
 
 #label-description {
 	color: var(--primary-text-color-light);
-	font-size: 12px;
+	font-size: 1.2rem;
+	margin-bottom: 2.4rem;
 }
 
 .button {
-	padding: 8px;
+	padding: 0.8rem 1.6rem;
 	background-color: var(--accent-color);
-	border: 0px solid transparent;
-	border-radius: 5px;
+	border: 0rem solid transparent;
+	border-radius: 3rem;
 	color: var(--primary-text-color);
 	text-transform: uppercase;
-	font-size: 11px;
+	font-size: 1.1rem;
 	text-decoration: none;
 	transition: all 1s;
 	display: flex;
@@ -87,18 +110,17 @@ body {
 .button-hollow {
 	background-color: transparent;
 	border-color: var(--accent-color);
-	border-width: 2px;
+	border-width: 0.2rem;
 }
 
 #social-icons {
 	list-style-type: none;
-	margin-top: 8px;
 }
 
 .social-icon {
-	width: 16px;
-	height: 16px;
-	margin-right: 16px;
+	width: 1.6rem;
+	height: 1.6rem;
+	margin-right: 1.6rem;
 }
 
 .flex {
@@ -115,11 +137,11 @@ body {
 }
 
 #home-buttons-container {
-	margin-top: 24px;
+	margin-top: 2.4rem;
 }
 
 #button-know-more {
-	margin-left: 16px;
+	margin-left: 1.6rem;
 }
 
 #works {
@@ -128,24 +150,29 @@ body {
 }
 
 #label-work-title {
-	font-size: 18px;
+	font-size: 1.8rem;
+	text-transform: uppercase;
 }
 
 #works-container {
 	margin: auto;
-	padding: 16px 0px 16px 0px;
+	padding: 1.6rem 0rem 1.6rem 0rem;
 }
 
 #work-list {
 	list-style-type: none;
-	margin-top: 8px;
+	margin-top: 0.8rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .work-list-item {
-	padding: 16px 0px 16px 0px;
-	border: none;
+	width: 45%;
+	padding: 1.6rem 0rem 1.6rem 0rem;
 	color: var(--secondary-text);
-	transition: all 1s;
+	transition: all 0.4s;
+	border: 0.1rem solid transparent;
 }
 
 .work-list-item:last-child {
@@ -153,35 +180,41 @@ body {
 }
 
 .work-list-item:hover {
-	padding: 16px;
-	background-color: var(--accent-color);
 	cursor: pointer;
-	border-radius: 10px;
-	box-shadow: 0px 2px 6px 0px rgba(128, 128, 128, 0.4);
+	border-bottom: 1rem solid var(--accent-color);
 }
 
 .project-name {
-	font-size: 17px;
+	font-size: 1.7rem;
 }
 
 .project-type {
 	color: var(--secondary-text-light);
 	text-transform: uppercase;
-	font-size: 10px;
+	font-size: 1rem;
+	margin-top: 0.4rem;
+}
+
+.project-description {
+	color: var(--secondary-text-light);
+	text-align: justify;
+	line-height: 2rem;
+	margin-top: 0.8rem;
+	font-size: 1.4rem;
 }
 
 .stacks {
-	margin-top: 8px;
+	margin-top: 0.8rem;
 	align-items: center;
 }
 
 .stack {
 	background-color: var(--secondary-text-light);
 	color: var(--primary-text-color-light);
-	margin-right: 8px;
-	padding: 4px 8px;
-	border-radius: 10px;
-	font-size: 11px;
+	margin-right: 0.8rem;
+	padding: 0.4rem 0.8rem;
+	border-radius: 0.1rem;
+	font-size: 1.1rem;
 	display: inline;
 	text-transform: uppercase;
 }
@@ -190,30 +223,37 @@ body {
 	color: var(--secondary-text);
 }
 
-@media screen and (max-width: 567px) {
+footer {
+	padding: 1.6rem;
+	text-align: center;
+}
+
+@media screen and (max-width: 56.7rem) {
 	body {
-		background: linear-gradient(
-			45deg,
-			var(--primary-color) 75%,
-			var(--accent-color) 100%
-		);
+		background: var(--primary-color);
 	}
 
-	#home,
+	#home {
+		width: 100%;
+		height: 100vh;
+		border: none;
+		padding: 0;
+	}
+
 	#works-container {
 		width: 85%;
 	}
 
+	.work-list-item {
+		width: 100%;
+	}
+
 	#label-name {
-		font-size: 45px;
+		font-size: 4.5rem;
 	}
 
 	#avatar {
-		width: 150px;
-		height: 150px;
-	}
-
-	.stack {
-		margin-bottom: 4px;
+		width: 15rem;
+		height: 15rem;
 	}
 }
