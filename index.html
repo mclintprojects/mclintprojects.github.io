@@ -4,9 +4,18 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta
+			name="description"
+			content="Full-stack engineer specializing in web and mobile applications. Kotlin/Android, JavaScript/Vue/Node, and Ruby/Rails 5."
+		/>
+		<meta
+			name="keywords"
+			content="HTML,Vue,Rails 5,Kotlin,Android,Clinton Mbah"
+		/>
+		<meta name="author" content="Mbah Clinton" />
 		<title>Mbah Clinton</title>
 		<link
-			href="https://fonts.googleapis.com/css?family=Muli|Cabin"
+			href="https://fonts.googleapis.com/css?family=Muli"
 			rel="stylesheet"
 		/>
 		<link href="./assets/styles.css" rel="stylesheet" />
@@ -15,34 +24,54 @@
 	<body>
 		<section id="home">
 			<div>
-				<img id="avatar" src="./assets/images/Snapchat-1195331476.png" />
+				<img id="avatar" src="./assets/images/pp.jpg" alt="profile_picture" />
 				<p id="label-name">Mbah Clinton</p>
 				<p id="label-job-title">Full-stack engineer</p>
 				<p id="label-description">Accra, Ghana.</p>
 				<div id="social-icons" class="flex">
 					<div>
 						<a href="https://twitter.com/mclint_" target="_blank">
-							<img class="social-icon" src="./assets/images/twitter.svg" />
+							<img
+								class="social-icon"
+								src="./assets/images/twitter.svg"
+								alt="Twitter profile URL"
+							/>
 						</a>
 					</div>
 					<div>
 						<a href="https://github.com/mclintprojects" target="_blank">
-							<img class="social-icon" src="./assets/images/github.svg" />
+							<img
+								class="social-icon"
+								src="./assets/images/github.svg"
+								alt="Github profile URL"
+							/>
 						</a>
 					</div>
 					<div>
 						<a href="https://medium.com/@mclint_" target="_blank">
-							<img class="social-icon" src="./assets/images/medium.svg" />
+							<img
+								class="social-icon"
+								src="./assets/images/medium.svg"
+								alt="Medium blog URL"
+							/>
 						</a>
 					</div>
 					<div>
 						<a href="https://codepen.io/mclint_" target="_blank">
-							<img class="social-icon" src="./assets/images/codepen.svg" />
+							<img
+								class="social-icon"
+								src="./assets/images/codepen.svg"
+								alt="Codepen profile URL"
+							/>
 						</a>
 					</div>
 					<div>
 						<a href="mailto:clintonmbah44@gmail.com" target="_blank">
-							<img class="social-icon" src="./assets/images/email.svg" />
+							<img
+								class="social-icon"
+								src="./assets/images/email.svg"
+								alt="Email address"
+							/>
 						</a>
 					</div>
 				</div>
@@ -64,7 +93,7 @@
 
 		<section id="works">
 			<div id="works-container">
-				<h3 id="label-work-title" class="title">Portfolio</h3>
+				<h3 id="label-work-title">Portfolio</h3>
 				<ul id="work-list">
 					<li class="work-list-item" data-link="https://peralta.app">
 						<p class="project-name">Peralta</p>
@@ -198,6 +227,18 @@
 			</div>
 		</section>
 		<footer><p>Copyright &copy; Mbah Clinton. 2018.</p></footer>
-		<script type="text/javascript" src="./assets/index.js"></script>
+		<script>
+			window.onload = function() {
+				let list = document.getElementById('work-list');
+				list.addEventListener('click', onProjectClicked);
+			};
+
+			function onProjectClicked(e) {
+				const url = e.target.dataset.link
+					? e.target.dataset.link
+					: e.target.parentNode.dataset.link;
+				window.open(url, '_blank');
+			}
+		</script>
 	</body>
 </html>

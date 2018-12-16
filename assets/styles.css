@@ -1,12 +1,12 @@
 :root {
 	--primary-color: #0f0f16;
 	--primary-color-light: hsl(233, 22%, 33%);
-	--accent-color: #ed217c;
+	--accent-color: #ff0073;
 	--accent-color-light: hsl(333, 85%, 63%);
 	--primary-text-color: rgba(255, 255, 255, 0.8);
-	--primary-text-color-light: rgba(255, 255, 255, 0.54);
+	--primary-text-color-light: rgba(255, 255, 255, 0.64);
 	--secondary-text: rgba(0, 0, 0, 0.8);
-	--secondary-text-light: rgba(0, 0, 0, 0.54);
+	--secondary-text-light: rgba(0, 0, 0, 0.64);
 	font-size: 60%;
 }
 
@@ -14,6 +14,7 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'Muli', sans-serif;
+	font-display: fallback;
 }
 
 body {
@@ -73,11 +74,6 @@ body {
 	border: 0.4rem solid var(--accent-color);
 	border-radius: 3rem;
 	animation: rounden 3s alternate-reverse infinite;
-}
-
-.title {
-	font-family: 'Cabin', 'Arial', sans-serif;
-	font-weight: 600;
 }
 
 #label-name {
@@ -156,7 +152,7 @@ body {
 }
 
 #works {
-	background-color: whitesmoke;
+	background-color: white;
 	color: var(--accent-color);
 }
 
@@ -197,12 +193,13 @@ body {
 
 .project-name {
 	font-size: 1.7rem;
+	font-weight: bold;
 }
 
 .project-type {
 	color: var(--secondary-text-light);
 	text-transform: uppercase;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	margin-top: 0.4rem;
 }
 
@@ -214,22 +211,6 @@ body {
 	font-size: 1.4rem;
 }
 
-.stacks {
-	margin-top: 0.8rem;
-	align-items: center;
-}
-
-.stack {
-	background-color: var(--secondary-text-light);
-	color: var(--primary-text-color-light);
-	margin-right: 0.8rem;
-	padding: 0.4rem 0.8rem;
-	border-radius: 0.1rem;
-	font-size: 1.1rem;
-	display: inline;
-	text-transform: uppercase;
-}
-
 .client-website {
 	color: var(--secondary-text);
 }
@@ -237,6 +218,10 @@ body {
 footer {
 	padding: 1.6rem;
 	text-align: center;
+}
+
+footer > p {
+	font-size: 1.2rem;
 }
 
 @media screen and (max-width: 56.7rem) {
