@@ -34,7 +34,7 @@ body {
 
 #home > div {
 	position: relative;
-	animation: slide-down 0.7s 0.1s ease-out;
+	animation: slide-down 0.7s 0.1s ease-in-out;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
