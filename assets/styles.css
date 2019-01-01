@@ -1,7 +1,7 @@
 :root {
-	--primary-color: #0f0f16;
+	--primary-color: #2f3045;
 	--primary-color-light: hsl(233, 22%, 33%);
-	--accent-color: #ff0073;
+	--accent-color: #cc1f72;
 	--accent-color-light: hsl(333, 85%, 63%);
 	--primary-text-color: rgba(255, 255, 255, 0.8);
 	--primary-text-color-light: rgba(255, 255, 255, 0.64);
