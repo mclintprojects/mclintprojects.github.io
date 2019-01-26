@@ -7,7 +7,7 @@
 	--primary-text-color-light: rgba(255, 255, 255, 0.64);
 	--secondary-text: rgba(0, 0, 0, 0.8);
 	--secondary-text-light: rgba(0, 0, 0, 0.64);
-	font-size: 60%;
+	font-size: 62.5%;
 }
 
 * {
@@ -22,10 +22,29 @@ body {
 	color: var(--primary-text-color);
 }
 
+nav {
+	margin-top: 1.6rem;
+}
+
+nav > ul > li {
+	display: inline-block;
+}
+
+nav > ul > li > a {
+	color: white;
+	text-transform: uppercase;
+	margin-left: 1.6rem;
+	text-decoration: none;
+	font-size: 1.2rem;
+}
+
+nav > ul > li > a:hover {
+	color: var(--accent-color);
+}
+
 #home {
 	height: calc(100vh - 6.8rem);
 	padding: 3rem;
-	border: 0.5rem solid var(--accent-color);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
