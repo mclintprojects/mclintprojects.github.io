@@ -1,10 +1,10 @@
 :root {
-	--primary-color: #2f3045;
-	--primary-color-light: hsl(233, 22%, 33%);
-	--accent-color: #cc1f72;
-	--accent-color-light: hsl(333, 85%, 63%);
-	--primary-text-color: rgba(255, 255, 255, 0.8);
-	--primary-text-color-light: rgba(255, 255, 255, 0.64);
+	--primary-color: blue;
+	--primary-color-light: rgb(46, 46, 255);
+	--accent-color: yellow;
+	--accent-color-light: rgb(255, 255, 208);
+	--primary-text-color: rgb(255, 255, 255);
+	--primary-text-color-light: rgba(255, 255, 255, 0.8);
 	--secondary-text: rgba(0, 0, 0, 0.8);
 	--secondary-text-light: rgba(0, 0, 0, 0.64);
 	font-size: 62.5%;
@@ -13,7 +13,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family: 'Muli', sans-serif;
+	font-family: 'Oxygen', sans-serif;
 	font-display: fallback;
 }
 
@@ -22,36 +22,15 @@ body {
 	color: var(--primary-text-color);
 }
 
-nav {
-	margin-top: 1.6rem;
-}
-
-nav > ul > li {
-	display: inline-block;
-}
-
-nav > ul > li > a {
-	color: white;
-	text-transform: uppercase;
-	margin-left: 1.6rem;
-	text-decoration: none;
-	font-size: 1.2rem;
-}
-
-nav > ul > li > a:hover {
-	color: var(--accent-color);
-}
-
-#home {
-	height: calc(100vh - 6.8rem);
-	padding: 3rem;
+.intro {
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
-#home > div {
+.intro > div {
 	position: relative;
 	animation: slide-down 0.7s 0.1s ease-in-out;
 	display: flex;
@@ -60,7 +39,7 @@ nav > ul > li > a:hover {
 	align-items: center;
 }
 
-#works-container {
+.works-container {
 	width: 80%;
 }
 
@@ -76,42 +55,39 @@ nav > ul > li > a:hover {
 	}
 }
 
-@keyframes rounden {
-	from {
-		border-radius: 1rem;
-	}
-
-	to {
-		border-radius: 50%;
-	}
-}
-
-#avatar {
+.intro__avatar {
 	width: 20rem;
 	height: 20rem;
-	object-fit: cover;
-	border: 0.4rem solid var(--accent-color);
-	border-radius: 3rem;
-	animation: rounden 3s alternate-reverse infinite;
 }
 
-#label-name {
-	font-size: 5.6rem;
+.intro__name {
+	font-size: 4rem;
 	color: var(--accent-color);
 	margin-top: 2rem;
 }
 
-#label-job-title {
-	font-size: 1.4rem;
+.intro__job-title {
+	font-size: 1.2rem;
 	text-transform: uppercase;
-	letter-spacing: 0.4rem;
 	margin-bottom: 0.8rem;
 }
 
-#label-description {
+.intro__location {
 	color: var(--primary-text-color-light);
-	font-size: 1.2rem;
+	text-transform: uppercase;
+	font-size: 0.9rem;
 	margin-bottom: 2.4rem;
+}
+
+.social-icons {
+	list-style-type: none;
+	display: flex;
+}
+
+.social-icon {
+	width: 1.6rem;
+	height: 1.6rem;
+	margin-right: 1.6rem;
 }
 
 .button {
@@ -130,62 +106,42 @@ nav > ul > li > a:hover {
 
 .button:hover {
 	cursor: pointer;
-	background-color: var(--primary-color-light);
+	background-color: var(--accent-color-light);
+	color: black;
 }
 
-.button-hollow {
+.button--hollow {
 	background-color: transparent;
 	border-color: var(--accent-color);
 	border-width: 0.2rem;
 }
 
-#social-icons {
-	list-style-type: none;
+.button--filled {
+	color: var(--primary-color);
 }
 
-.social-icon {
-	width: 1.6rem;
-	height: 1.6rem;
-	margin-right: 1.6rem;
-}
-
-.flex {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.flex-row {
-	flex-direction: row;
-}
-
-.flex-column {
-	flex-direction: column;
-}
-
-#home-buttons-container {
+.home-buttons-container {
 	margin-top: 2.4rem;
+	display: flex;
 }
 
-#button-know-more {
-	margin-left: 1.6rem;
-}
-
-#works {
+.works {
 	background-color: white;
 	color: var(--accent-color);
 }
 
-#label-work-title {
+.works-container__title {
 	font-size: 1.8rem;
 	text-transform: uppercase;
+	color: var(--primary-color);
 }
 
-#works-container {
+.works-container {
 	margin: auto;
 	padding: 1.6rem 0rem 1.6rem 0rem;
 }
 
-#work-list {
+.work-list {
 	list-style-type: none;
 	margin-top: 0.8rem;
 	display: flex;
@@ -207,22 +163,22 @@ nav > ul > li > a:hover {
 
 .work-list-item:hover {
 	cursor: pointer;
-	border-bottom: 1rem solid var(--accent-color);
+	border-bottom: 1rem solid var(--primary-color);
 }
 
-.project-name {
+.work-list-item__name {
 	font-size: 1.7rem;
 	font-weight: bold;
 }
 
-.project-type {
+.work-list-item__type {
 	color: var(--secondary-text-light);
 	text-transform: uppercase;
 	font-size: 1.2rem;
 	margin-top: 0.4rem;
 }
 
-.project-description {
+.work-list-item__description {
 	color: var(--secondary-text-light);
 	text-align: justify;
 	line-height: 2rem;
@@ -248,14 +204,13 @@ footer > p {
 		background: var(--primary-color);
 	}
 
-	#home {
+	.intro {
 		width: 100%;
 		height: 100vh;
-		border: none;
 		padding: 0;
 	}
 
-	#works-container {
+	.works-container {
 		width: 85%;
 	}
 
@@ -263,12 +218,12 @@ footer > p {
 		width: 100%;
 	}
 
-	#label-name {
-		font-size: 4.5rem;
+	.intro__name {
+		font-size: 3rem;
 	}
 
-	#avatar {
-		width: 15rem;
-		height: 15rem;
+	.intro__avatar {
+		width: 12rem;
+		height: 12rem;
 	}
 }

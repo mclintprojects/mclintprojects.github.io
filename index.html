@@ -15,27 +15,25 @@
 		<meta name="author" content="Mbah Clinton" />
 		<title>Mbah Clinton</title>
 		<link
-			href="https://fonts.googleapis.com/css?family=Muli"
+			href="https://fonts.googleapis.com/css?family=Oxygen"
 			rel="stylesheet"
 		/>
 		<link href="./assets/styles.css" rel="stylesheet" />
 	</head>
 
 	<body>
-		<nav>
-			<ul>
-				<li><a href="#works">Portfolio</a></li>
-				<li><a href="#blog">Blog</a></li>
-			</ul>
-		</nav>
-		<section id="home">
+		<section class="intro">
 			<div>
-				<img id="avatar" src="./assets/images/pp.jpg" alt="profile_picture" />
-				<p id="label-name">Mbah Clinton</p>
-				<p id="label-job-title">Full-stack software engineer</p>
-				<p id="label-description">Accra, Ghana.</p>
-				<div id="social-icons" class="flex">
-					<div>
+				<img
+					class="intro__avatar"
+					src="./assets/images/selfie.svg"
+					alt="profile_picture"
+				/>
+				<p class="intro__name">Mbah Clinton</p>
+				<p class="intro__job-title">Full-stack software engineer</p>
+				<p class="intro__location">Accra, Ghana.</p>
+				<ul class="social-icons" class="flex">
+					<li>
 						<a href="https://twitter.com/mclint_" target="_blank">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -76,8 +74,8 @@
 								<g></g>
 							</svg>
 						</a>
-					</div>
-					<div>
+					</li>
+					<li>
 						<a href="https://github.com/mclintprojects" target="_blank">
 							<svg
 								class="social-icon"
@@ -116,8 +114,8 @@
 								<g></g>
 							</svg>
 						</a>
-					</div>
-					<div>
+					</li>
+					<li>
 						<a href="https://medium.com/@mclint_" target="_blank">
 							<svg
 								class="social-icon"
@@ -156,8 +154,8 @@
 								<g></g>
 							</svg>
 						</a>
-					</div>
-					<div>
+					</li>
+					<li>
 						<a href="https://codepen.io/mclint_" target="_blank">
 							<svg
 								class="social-icon"
@@ -196,8 +194,8 @@
 								<g></g>
 							</svg>
 						</a>
-					</div>
-					<div>
+					</li>
+					<li>
 						<a href="mailto:clintonmbah44@gmail.com" target="_blank">
 							<svg
 								class="social-icon"
@@ -242,13 +240,13 @@
 								<g></g>
 							</svg>
 						</a>
-					</div>
-				</div>
+					</li>
+				</ul>
 
-				<div id="home-buttons-container" class="flex">
-					<a
-						id="button-view-resume"
-						class="button button-hollow"
+				<div class="home-buttons-container" class="flex">
+					<a class="button button--filled" href="#works">View portfolio</a>
+					<a style="margin-left: 1.6rem;"
+						class="button button--hollow"
 						target="_blank"
 						href="https://docs.google.com/document/d/1B9Gc_JAD85L9k4cIeULG3Vn2K3yEpdcZAxfZcwzcRgo/edit"
 						>View resume
@@ -257,13 +255,13 @@
 			</div>
 		</section>
 
-		<section id="works">
-			<div id="works-container">
-				<h3 id="label-work-title">Portfolio</h3>
-				<ul id="work-list">
+		<section id="works" class="works">
+			<div class="works-container">
+				<h3 class="works-container__title">Portfolio</h3>
+				<ul class="work-list">
 					<li class="work-list-item" data-link="https://peralta.app">
-						<p class="project-name">Peralta</p>
-						<p class="project-type">
+						<p class="work-list-item__name">Peralta</p>
+						<p class="work-list-item__type">
 							Client -
 							<span>
 								<a
@@ -274,7 +272,7 @@
 								</a>
 							</span>
 						</p>
-						<p class="project-description">
+						<p class="work-list-item__description">
 							As part of a 6-week internship, I worked with a senior consultant
 							to deliver Peralta. It's a Vue + Rails 5 app that currently powers
 							talent management for Africa Foresight Group's talent pool of over
@@ -284,8 +282,8 @@
 					</li>
 
 					<li class="work-list-item" data-link="https://anyato.live/">
-						<p class="project-name">Anyato.live</p>
-						<p class="project-type">
+						<p class="work-list-item__name">Anyato.live</p>
+						<p class="work-list-item__type">
 							Client -
 							<span>
 								<a
@@ -296,7 +294,7 @@
 								</a>
 							</span>
 						</p>
-						<p class="project-description">
+						<p class="work-list-item__description">
 							Chioma is a friend. This is a personal website that I designed and
 							developed with her while teaching her how to code. It features a
 							Glitch Node.JS API I built that (was
@@ -312,8 +310,8 @@
 						class="work-list-item"
 						data-link="https://play.google.com/store/apps/details?id=com.alansa.cewp"
 					>
-						<p class="project-name">CEWP</p>
-						<p class="project-type">
+						<p class="work-list-item__name">CEWP</p>
+						<p class="work-list-item__type">
 							Client -
 							<span>
 								<a
@@ -324,7 +322,7 @@
 								>
 							</span>
 						</p>
-						<p class="project-description">
+						<p class="work-list-item__description">
 							CEWP is a project I worked on for the Energy Commission of Ghana
 							as part of a campaign to get Ghanaians to use only Certified
 							Electricians for electrical work. It lists the over 6000 Certified
@@ -339,9 +337,9 @@
 						class="work-list-item"
 						data-link="https://play.google.com/store/apps/details?id=com.alansa.ideabag2"
 					>
-						<p class="project-name">Programming Ideas 2</p>
-						<p class="project-type">Personal</p>
-						<p class="project-description">
+						<p class="work-list-item__name">Programming Ideas 2</p>
+						<p class="work-list-item__type">Personal</p>
+						<p class="work-list-item__description">
 							When I began learning how to code I was always looking for ideas
 							of apps to build in a bid to increase my proficiency so I built
 							IdeaBag. It currently has over 150 ideas, 3 difficulty levels to
@@ -353,9 +351,9 @@
 					</li>
 
 					<li class="work-list-item" data-link="https://ideabag2.netlify.com">
-						<p class="project-name">Programming Ideas 2 (WEB)</p>
-						<p class="project-type">Personal</p>
-						<p class="project-description">
+						<p class="work-list-item__name">Programming Ideas 2 (WEB)</p>
+						<p class="work-list-item__type">Personal</p>
+						<p class="work-list-item__description">
 							Several users rightfully complained about IdeaBag being an
 							Android-only application. In an effort to appease those
 							complaints, I ported IdeaBag to the web with Vue.JS. After
@@ -368,8 +366,8 @@
 						class="work-list-item"
 						data-link="https://github.com/mclintprojects/present-sir"
 					>
-						<p class="project-name">Present, Sir</p>
-						<p class="project-type">
+						<p class="work-list-item__name">Present, Sir</p>
+						<p class="work-list-item__type">
 							Hackathon (2nd place) -
 							<span>
 								<a
@@ -380,7 +378,7 @@
 								>
 							</span>
 						</p>
-						<p class="project-description">
+						<p class="work-list-item__description">
 							Over the course of 24 hours at the maiden edition of forLOOP
 							Ghana's hackathon, I developed "Present, Sir". It is a class
 							USSD-based class attendance tracker built using Africa's Talking's
@@ -389,12 +387,13 @@
 						</p>
 					</li>
 				</ul>
+				</div>
 			</div>
 		</section>
 		<footer><p>Copyright &copy; Mbah Clinton.</p></footer>
 		<script>
 			window.onload = function() {
-				let list = document.getElementById('work-list');
+				let list = document.querySelector('.work-list');
 				list.addEventListener('click', onProjectClicked);
 			};
 
