@@ -1,10 +1,10 @@
 :root {
-	--primary-color: blue;
-	--primary-color-light: rgb(46, 46, 255);
-	--accent-color: yellow;
-	--accent-color-light: rgb(255, 255, 208);
-	--primary-text-color: rgb(255, 255, 255);
-	--primary-text-color-light: rgba(255, 255, 255, 0.8);
+	--primary-color: #f8f2e5;
+	--primary-color-light: #fffdf9;
+	--accent-color: black;
+	--accent-color-light: rgb(37, 37, 37);
+	--primary-text-color: rgb(27, 27, 27);
+	--primary-text-color-light: rgba(65, 65, 65, 0.8);
 	--secondary-text: rgba(0, 0, 0, 0.8);
 	--secondary-text-light: rgba(0, 0, 0, 0.64);
 	font-size: 62.5%;
@@ -20,6 +20,25 @@
 body {
 	background: var(--primary-color);
 	color: var(--primary-text-color);
+}
+
+nav {
+	position: relative;
+	padding: 1.4rem;
+	animation: slide-down 0.7s 0.1s ease-in-out;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: end;
+}
+
+nav ul li a {
+	color: var(--primary-text-color);
+	font-size: 1.2rem;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 
 .intro {
@@ -133,7 +152,7 @@ body {
 .works-container__title {
 	font-size: 1.8rem;
 	text-transform: uppercase;
-	color: var(--primary-color);
+	color: var(--primary-text-color);
 }
 
 .works-container {
