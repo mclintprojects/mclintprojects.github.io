@@ -125,6 +125,7 @@ body {
 
 .works-container {
 	margin: auto;
+	width: 54rem;
 	padding: 1.6rem 0rem 1.6rem 0rem;
 }
 
@@ -137,7 +138,7 @@ body {
 }
 
 .work-list-item {
-	width: 45%;
+	width: 100%;
 	padding: 1.6rem 0rem 1.6rem 0rem;
 	color: var(--primary-text);
 	transition: all 0.4s;
