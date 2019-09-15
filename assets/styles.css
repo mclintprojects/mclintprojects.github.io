@@ -19,9 +19,14 @@ body {
 	color: var(--primary-text);
 	background: var(--bg);
 	width: 80%;
-	padding: 7rem;
+	padding: 7rem 0;
 	margin: auto;
 	display: flex;
+	justify-content: space-between;
+}
+
+ul {
+	list-style: none;
 }
 
 a {
@@ -36,30 +41,35 @@ a:hover {
 
 .logo {
 	height: 3.2rem;
+	transition: transform 1s;
+}
+
+.logo:hover {
+	transform: rotateZ(90deg);
 }
 
 .navbar {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	min-height: calc(100vh - 18rem);
+	height: calc(100vh - 18rem);
+	position: fixed;
 }
 
 .navbar-menu {
 	display: flex;
 	flex-direction: column;
 	height: 10rem;
-	list-style: none;
 	justify-content: space-between;
 	align-items: center;
 }
 
 .navbar-menu li a {
 	display: block;
-	width: 1.6rem;
-	height: 1.6rem;
+	width: 1.2rem;
+	height: 1.2rem;
 	border-radius: 50%;
-	background: var(--primary-text);
+	border: 0.1rem solid var(--primary-text);
 }
 
 .navbar-menu li a:hover {
@@ -80,21 +90,129 @@ a:hover {
 }
 
 main {
-	margin: auto;
+	margin-left: 10rem;
 }
 
 .intro {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
-	height: calc(100vh - 18rem);
+	height: calc(100vh - 7rem);
 }
 
 .intro p {
 	font-size: 10rem;
+	animation: introAnim 700ms ease-out;
+	position: relative;
+}
+
+.intro p:nth-of-type(1) {
+	animation-delay: 1s;
+}
+
+.intro p:nth-of-type(2) {
+	animation-delay: 1.2s;
+}
+
+.intro p:nth-of-type(3) {
+	animation-delay: 1.4s;
+}
+
+@keyframes introAnim {
+	from {
+		top: -6rem;
+		opacity: 0;
+	}
+
+	to {
+		top: 0;
+		opacity: 1;
+	}
 }
 
 .intro p span {
 	color: white;
 	-webkit-text-stroke: 0.1rem var(--primary-text);
+}
+
+.about {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.about ul {
+	width: 30%;
+	margin-bottom: 4rem;
+}
+
+.about ul h2 {
+	font-size: 3rem;
+	font-weight: bold;
+	margin-bottom: 2.4rem;
+	padding-bottom: 0.4rem;
+	border-bottom: 0.1rem double var(--primary-text);
+}
+
+.about ul li {
+	margin-bottom: 0.8rem;
+}
+
+.about ul li:last-child {
+	margin-bottom: 0;
+}
+
+.about ul li p {
+	font-size: 1.6rem;
+}
+
+.about ul li p span {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.portfolio {
+	margin-top: 9rem;
+}
+
+.portfolio h1 {
+	font-size: 7rem;
+	font-weight: normal;
+	border-bottom: 0.1rem double var(--primary-text);
+	margin-bottom: 2.4rem;
+}
+
+.portfolio ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.portfolio-item {
+	width: 48%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-bottom: 4rem;
+}
+
+.portfolio-item small {
+	display: block;
+	margin-bottom: 1.6rem;
+}
+
+.portfolio-item p {
+	color: var(--primary-text-light);
+}
+
+.portfolio-item a {
+	align-self: flex-end;
+	margin-top: 1.6rem;
+	padding-bottom: 0.2rem;
+	border-bottom: 0.1rem solid var(--primary-text);
+	transition: transform 500ms;
+}
+
+.portfolio-item a:hover {
+	transform: rotateZ(-3deg);
 }
