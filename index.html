@@ -16,218 +16,29 @@
 		<title>Mbah Clinton</title>
 		<link rel="icon" href="/assets/images/selfie.svg" />
 		<link
-			href="https://fonts.googleapis.com/css?family=Oxygen"
+			href="https://fonts.googleapis.com/css?family=DM+Sans|Merriweather"
 			rel="stylesheet"
 		/>
 		<link href="./assets/styles.css" rel="stylesheet" />
 	</head>
 
 	<body>
-		<section class="intro">
-			<div>
-				<img
-					class="intro__avatar"
-					src="./assets/images/selfie.svg"
-					alt="profile_picture"
-				/>
-				<p class="intro__name">Mbah Clinton</p>
-				<p class="intro__job-title">Full-stack software engineer</p>
-				<p class="intro__location">Accra, Ghana.</p>
-
-				<div class="home-buttons-container" class="flex">
-					<a class="button button--filled" href="#works">View portfolio</a>
-					<a style="margin-left: 1.6rem;"
-						class="button button--hollow"
-						target="_blank"
-						href="https://docs.google.com/document/d/1B9Gc_JAD85L9k4cIeULG3Vn2K3yEpdcZAxfZcwzcRgo/edit"
-						>View resume
-					</a>
-				</div>
-			</div>
-		</section>
-
-		<section id="works" class="works">
-			<div class="works-container">
-				<h3 class="works-container__title">Portfolio</h3>
-				<ul class="work-list">
-					<li class="work-list-item" data-link="https://github.com/mclintprojects/actioncable-vue">
-						<p class="work-list-item__name">ActionCable-Vue</p>
-						<p class="work-list-item__type">
-							Opensource
-						</p>
-						<p class="work-list-item__description">
-							While working on a Rails + Vue client project that needed realtime multi-conversation chat, I realized just how tedious it was to work with ActionCable in Vue. This realization led to me writing a Vue plugin that made using ActionCable in Vue dead-easy and much more delightful to work with. ActionCable-Vue currently has over 2000 downloads on npm and 40 stars on Github.
-						</p>
-					</li>
-
-					<li class="work-list-item">
-						<p class="work-list-item__name">eTrack</p>
-						<p class="work-list-item__type">
-							Client -
-							<span>
-								<a class="client-website" href="https://www.eoutsource.net/" target="_blank">Edge Outsource
-								</a>
-							</span>
-						</p>
-						<p class="work-list-item__description">
-							eTrack is a fleet tracking application I worked on for Edge Outsource Ltd in collaboration with TroTro Tractor Ltd. It is an Android application that allows clients of Edge Outsource to primarily view the details (driver, registration number) and location of their fleet. It also features the ability to send engine commands to vehicles, and retrieve and playback vehicle location history data.
-						</p>
-					</li>
-
-					<li class="work-list-item" data-link="https://peralta.app">
-						<p class="work-list-item__name">Peralta</p>
-						<p class="work-list-item__type">
-							Client -
-							<span>
-								<a
-									class="client-website"
-									href="http://africaforesight.com"
-									target="_blank"
-									>Africa Foresight Group
-								</a>
-							</span>
-						</p>
-						<p class="work-list-item__description">
-							As part of a 6-week internship, I worked with a senior consultant
-							to deliver Peralta. It's a Vue + Rails 5 app that currently powers
-							talent management for Africa Foresight Group's talent pool of over
-							50 consultants. I spearheaded the engineering effort to migrate
-							the application's frontend architecture from Rails MVC to Vue SPA.
-						</p>
-					</li>
-
-					<li class="work-list-item" data-link="https://anyato.live/">
-						<p class="work-list-item__name">Anyato.live</p>
-						<p class="work-list-item__type">
-							Client -
-							<span>
-								<a
-									class="client-website"
-									href="http://twitter/com/Anyaato"
-									target="_blank"
-									>Nnanna Chioma
-								</a>
-							</span>
-						</p>
-						<p class="work-list-item__description">
-							Chioma is a friend. This is a personal website that I designed and
-							developed with her while teaching her how to code. It features a
-							Glitch Node.JS API I built that (was
-							<a
-								href="http://culture-zine.glitch.me/culture/this-week-on-glitch-week-34-2018/"
-								>featured</a
-							>
-							by Glitch) retrieves any Medium user's posts.
-						</p>
-					</li>
-
-					<li
-						class="work-list-item"
-						data-link="https://play.google.com/store/apps/details?id=com.alansa.cewp"
-					>
-						<p class="work-list-item__name">CEWP</p>
-						<p class="work-list-item__type">
-							Client -
-							<span>
-								<a
-									class="client-website"
-									href="http://www.cewp.energycom.gov.gh/"
-									target="_blank"
-									>CEWP</a
-								>
-							</span>
-						</p>
-						<p class="work-list-item__description">
-							CEWP is a project I worked on for the Energy Commission of Ghana
-							as part of a campaign to get Ghanaians to use only Certified
-							Electricians for electrical work. It lists the over 6000 Certified
-							Electricians in Ghana and allows you to search for and contact
-							those nearest to you. I built both the Android app and the ASP.NET
-							WEB API backend that powers the location-aware electrician search
-							feature.
-						</p>
-					</li>
-
-					<li
-						class="work-list-item"
-						data-link="https://play.google.com/store/apps/details?id=com.alansa.ideabag2"
-					>
-						<p class="work-list-item__name">Programming Ideas 2</p>
-						<p class="work-list-item__type">Personal</p>
-						<p class="work-list-item__description">
-							When I began learning how to code I was always looking for ideas
-							of apps to build in a bid to increase my proficiency so I built
-							IdeaBag. It currently has over 150 ideas, 3 difficulty levels to
-							cater to varying degrees of proficiency and a well-received user
-							interface that I designed. IdeaBag currently has more than 130,000
-							installs and an enviable 4.6/5 rating after 500+ reviews in the
-							Google Play Store.
-						</p>
-					</li>
-
-					<li class="work-list-item" data-link="https://ideabag2.netlify.com">
-						<p class="work-list-item__name">Programming Ideas 2 (WEB)</p>
-						<p class="work-list-item__type">Personal</p>
-						<p class="work-list-item__description">
-							Several users rightfully complained about IdeaBag being an
-							Android-only application. In an effort to appease those
-							complaints, I ported IdeaBag to the web with Vue.JS. After
-							open-sourcing it, contributors have helped bring it to
-							feature-parity with its Android counterpart.
-						</p>
-					</li>
-
-					<li
-						class="work-list-item"
-						data-link="https://github.com/mclintprojects/present-sir"
-					>
-						<p class="work-list-item__name">Present, Sir</p>
-						<p class="work-list-item__type">
-							Hackathon (2nd place) -
-							<span>
-								<a
-									class="client-website"
-									href="https://twitter.com/forloopghana?lang=en"
-									target="_blank"
-									>forLOOP Ghana UG Hackathon</a
-								>
-							</span>
-						</p>
-						<p class="work-list-item__description">
-							Over the course of 24 hours at the maiden edition of forLOOP
-							Ghana's hackathon, I developed "Present, Sir". It is a class
-							USSD-based class attendance tracker built using Africa's Talking's
-							USSD API. I built the Xamarin.Android based app and used ASP.NET
-							MVC5 + LiteDB for the backend.
-						</p>
-					</li>
-				</ul>
-				</div>
-			</div>
-		</section>
-		<footer>
-			<ul>
-				<li><a href="http://blog.clintonmbah.com" rel="noopener noreferrer">blog</a></li>
-				<li><a href="https://github.com/mclintprojects" target="_blank" rel="noopener noreferrer">github</a></li>
-				<li><a href="https://mobile.twitter.com/mclint_" target="_blank" rel="noopener noreferrer">twitter</a></li>
-				<li><a href="https://codepen.io/mclint_" target="_blank" rel="noopener noreferrer">codepen</a></li>
-				<li><a href="mailto:clintonmbah44@gmail.com" target="_blank" rel="noopener noreferrer">email</a></li>
+		<nav class="navbar">
+			<img class="logo" src="/assets/images/selfie.svg" alt="logo" />
+			<ul class="navbar-menu">
+				<li><a href="https://blog.clintonmbah.com"></a></li>
+				<li><a href="https://github.com/mclintprojects"></a></li>
+				<li><a href="https://twitter.com/mclint_"></a></li>
 			</ul>
-
-			<p>Copyright &copy; Mbah Clinton.</p>
-		</footer>
-		<script>
-			window.onload = function() {
-				let list = document.querySelector('.work-list');
-				list.addEventListener('click', onProjectClicked);
-			};
-
-			function onProjectClicked(e) {
-				const url = e.target.dataset.link
-					? e.target.dataset.link
-					: e.target.parentNode.dataset.link;
-				window.open(url, '_blank');
-			}
-		</script>
+		</nav>
+		<main>
+			<section class="intro">
+				<div>
+					<p><span>Software</span> engineer.</p>
+					<p><span>Accra,</span> Ghana.</p>
+					<p><span>Sometimes</span> <a href="https://instagram.com/m.clint">draws.</p>
+				</div>
+			</section>
+		</main>
 	</body>
 </html>
