@@ -177,7 +177,6 @@ main {
 
 .portfolio h1 {
 	font-size: 7rem;
-	font-weight: normal;
 	border-bottom: 0.1rem double var(--primary-text);
 	margin-bottom: 2.4rem;
 }
@@ -215,4 +214,43 @@ main {
 
 .portfolio-item a:hover {
 	transform: rotateZ(-3deg);
+}
+
+@media only screen and (max-device-width: 480px) {
+	body {
+		width: 90%;
+		padding: 2rem 0;
+	}
+
+	main {
+		margin-left: 5rem;
+	}
+
+	.intro {
+		height: calc(100vh - 2rem);
+	}
+
+	.intro p {
+		font-size: 4.5rem;
+	}
+
+	.about {
+		flex-direction: column;
+	}
+
+	.about ul {
+		width: 100%;
+	}
+
+	.portfolio h1 {
+		font-size: 4rem;
+	}
+
+	.portfolio ul {
+		flex-direction: column;
+	}
+
+	.portfolio-item {
+		width: 100%;
+	}
 }
