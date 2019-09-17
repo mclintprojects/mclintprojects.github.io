@@ -107,15 +107,15 @@ main {
 }
 
 .intro p:nth-of-type(1) {
-	animation-delay: 1s;
+	animation-delay: 300ms;
 }
 
 .intro p:nth-of-type(2) {
-	animation-delay: 1.2s;
+	animation-delay: 400ms;
 }
 
 .intro p:nth-of-type(3) {
-	animation-delay: 1.4s;
+	animation-delay: 500ms;
 }
 
 @keyframes introAnim {
