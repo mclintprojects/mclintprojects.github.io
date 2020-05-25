@@ -207,13 +207,9 @@ main {
 .portfolio-item a {
 	align-self: flex-end;
 	margin-top: 1.6rem;
-	padding-bottom: 0.2rem;
+	padding-bottom: 0.1rem;
 	border-bottom: 0.1rem solid var(--primary-text);
 	transition: transform 500ms;
-}
-
-.portfolio-item a:hover {
-	transform: rotateZ(-3deg);
 }
 
 @media only screen and (max-device-width: 480px) {
