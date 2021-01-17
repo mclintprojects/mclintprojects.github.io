@@ -11,11 +11,22 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'CircularStd', 'Helvetica Neue', 'Segoe UI', sans-serif;
+}
+
+@font-face{
+	font-family: "CircularStd";
+	src: url("assets/fonts/CircularStd.ttf");
+}
+
+@font-face{
+	font-family: "CircularStd";
+	src: url("assets/fonts/CircularStd-Bold.ttf");
+	font-weight: bold;
 }
 
 body {
 	font-size: 1.6rem;
-	font-family: 'DM Sans', 'Arial', sans-serif;
 	color: var(--primary-text);
 	background: var(--bg);
 	width: 80%;
