@@ -16,12 +16,12 @@
 
 @font-face{
 	font-family: "CircularStd";
-	src: url("assets/fonts/CircularStd.ttf");
+	src: url("../assets/CircularStd.ttf");
 }
 
 @font-face{
 	font-family: "CircularStd";
-	src: url("assets/fonts/CircularStd-Bold.ttf");
+	src: url("../assets/CircularStd-Bold.ttf");
 	font-weight: bold;
 }
 
