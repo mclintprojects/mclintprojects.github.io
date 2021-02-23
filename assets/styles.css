@@ -11,7 +11,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'CircularStd', 'Helvetica Neue', 'Segoe UI', sans-serif;
 }
 
 @font-face{
@@ -23,6 +22,14 @@
 	font-family: "CircularStd";
 	src: url("../assets/CircularStd-Bold.ttf");
 	font-weight: bold;
+}
+
+.intro p, h1, h2 {
+	font-family: 'CircularStd', 'Helvetica Neue', 'Segoe UI', sans-serif;
+}
+
+p, small, a {
+	font-family: 'Inter', 'Helvetica Neue', 'Segoe UI', sans-serif;
 }
 
 body {
@@ -213,14 +220,20 @@ main {
 
 .portfolio-item p {
 	color: var(--primary-text-light);
+	line-height: 24px;
 }
 
 .portfolio-item a {
 	align-self: flex-end;
 	margin-top: 1.6rem;
 	padding-bottom: 0.1rem;
-	border-bottom: 0.1rem solid var(--primary-text);
 	transition: transform 500ms;
+	border-bottom: 0.1rem solid transparent;
+	font-weight: bold;
+}
+
+.portfolio-item a:hover {
+	border-bottom: 0.1rem solid var(--primary-text);
 }
 
 @media only screen and (max-device-width: 480px) {
