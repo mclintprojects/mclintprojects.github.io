@@ -230,6 +230,7 @@ main {
 	transition: transform 500ms;
 	border-bottom: 0.1rem solid transparent;
 	font-weight: bold;
+	transition: all 700ms;
 }
 
 .portfolio-item a:hover {
