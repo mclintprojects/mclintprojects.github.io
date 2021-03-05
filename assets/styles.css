@@ -224,6 +224,13 @@ main {
 	line-height: 24px;
 }
 
+.portfolio-item p a {
+	border: 0;
+	padding: 0;
+	font-size: inherit;
+	border-bottom: 1px solid var(--primary-text);
+}
+
 .portfolio-item a {
 	align-self: flex-end;
 	margin-top: 1.6rem;
@@ -231,14 +238,14 @@ main {
 	transition: transform 500ms;
 	border-bottom: 0.1rem solid transparent;
 	font-weight: bold;
-	font-size: 1.2rem;
-	text-transform: uppercase;
-	color: var(--accent);
+	font-size: 1.4rem;
 	transition: all 700ms;
+	border: 1px solid var(--primary-text);
+	padding: 6px 16px;
 }
 
-.portfolio-item a:hover {
-	border-bottom: 0.1rem solid var(--accent);
+.portfolio-item a:hover{
+	background: rgb(237, 237, 237);
 }
 
 @media only screen and (max-device-width: 480px) {
