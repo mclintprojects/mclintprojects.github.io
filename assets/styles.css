@@ -211,6 +211,7 @@ main {
 	flex-direction: column;
 	align-items: flex-start;
 	margin-bottom: 4rem;
+	justify-content: space-between;
 }
 
 .portfolio-item small {
@@ -230,11 +231,14 @@ main {
 	transition: transform 500ms;
 	border-bottom: 0.1rem solid transparent;
 	font-weight: bold;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	color: var(--accent);
 	transition: all 700ms;
 }
 
 .portfolio-item a:hover {
-	border-bottom: 0.1rem solid var(--primary-text);
+	border-bottom: 0.1rem solid var(--accent);
 }
 
 @media only screen and (max-device-width: 480px) {
