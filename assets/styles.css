@@ -41,6 +41,8 @@ body {
 	margin: auto;
 	display: flex;
 	justify-content: space-between;
+	font-smooth: antialiased;
+	-webkit-font-smoothing: antialiased;
 }
 
 ul {
@@ -55,6 +57,11 @@ a {
 a:hover {
 	padding-bottom: 0.2rem;
 	border-bottom: 0.1rem double var(--primary-text);
+}
+
+b {
+	font-weight: bold !important;
+	color: black;
 }
 
 .logo {
