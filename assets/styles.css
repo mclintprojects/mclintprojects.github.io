@@ -240,19 +240,19 @@ main {
 
 .portfolio-item a {
 	align-self: flex-end;
-	margin-top: 1.6rem;
+	margin-top: 1.6rem;;
 	padding-bottom: 0.1rem;
 	transition: transform 500ms;
 	border-bottom: 0.1rem solid transparent;
-	font-weight: bold;
 	font-size: 1.4rem;
 	transition: all 700ms;
-	border: 1px solid var(--primary-text);
-	padding: 6px 16px;
+	padding: 12px;
+	border: 1px solid black;
 }
 
 .portfolio-item a:hover{
-	background: rgb(237, 237, 237);
+	background: rgb(221, 221, 221);
+	border-radius: 300px;
 }
 
 @media only screen and (max-device-width: 480px) {
