@@ -1,295 +1,141 @@
 :root {
-	--bg: #ffffff;
-	--primary: #ffe232;
-	--accent: rgb(4, 0, 255);
-	--primary-text: rgba(0, 0, 0, 0.8);
-	--primary-text-light: rgba(0, 0, 0, 0.7);
-	font-size: 62.5%;
+  --bg: #ace2df;
+  --primary: #ffe232;
+  --accent: rgb(4, 0, 255);
+  --primary-text: #16233e;
+  --primary-text-light: #666f80;
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@font-face{
-	font-family: "CircularStd";
-	src: url("../assets/CircularStd.ttf");
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../assets/CreatoDisplay-Regular.otf");
 }
 
-@font-face{
-	font-family: "CircularStd";
-	src: url("../assets/CircularStd-Bold.ttf");
-	font-weight: bold;
-}
-
-.intro p, h1, h2 {
-	font-family: 'CircularStd', 'Helvetica Neue', 'Segoe UI', sans-serif;
-}
-
-p, small, a {
-	font-family: 'Inter', 'Helvetica Neue', 'Segoe UI', sans-serif;
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../assets/CreatoDisplay-Bold.otf");
+  font-weight: bold;
 }
 
 body {
-	font-size: 1.6rem;
-	color: var(--primary-text);
-	background: var(--bg);
-	width: 80%;
-	padding: 7rem 0;
-	margin: auto;
-	display: flex;
-	justify-content: space-between;
-	font-smooth: antialiased;
-	-webkit-font-smoothing: antialiased;
+  color: var(--primary-text);
+  background: var(--bg);
+  width: 850px;
+  padding: 48px 0;
+  margin: auto;
+  font-smooth: antialiased;
+  -webkit-font-smoothing: antialiased;
+  font-family: "CreatoDisplay", "Helvetica Neue", "Segoe UI", sans-serif;
 }
 
 ul {
-	list-style: none;
+  list-style: none;
 }
 
 a {
-	color: var(--primary-text);
-	text-decoration: none;
+  color: var(--primary-text);
+  text-decoration: none !important;
 }
 
-a:hover {
-	padding-bottom: 0.2rem;
-	border-bottom: 0.1rem double var(--primary-text);
+p {
+  font-size: 24px;
 }
 
 b {
-	font-weight: bold !important;
-	color: black;
-}
-
-.logo {
-	height: 3.2rem;
-	transition: transform 1s;
-}
-
-.logo:hover {
-	transform: rotateZ(90deg);
-}
-
-.navbar {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	height: calc(100vh - 18rem);
-	position: fixed;
+  font-weight: bold !important;
+  color: black;
 }
 
 .navbar-menu {
-	display: flex;
-	flex-direction: column;
-	height: 10rem;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+}
+
+.navbar-menu li {
+  padding: 8px 16px;
+  border: 2px solid black;
+  border-radius: 30px;
+  margin-right: 8px;
+  background: white;
 }
 
 .navbar-menu li a {
-	display: block;
-	width: 1.2rem;
-	height: 1.2rem;
-	border-radius: 50%;
-	border: 0.1rem solid var(--primary-text);
+  font-weight: bold;
 }
 
-.navbar-menu li a:hover {
-	animation: linkColorsChange 2s ease-out;
-	animation-iteration-count: infinite;
+.intro-title {
+  margin-top: 64px;
+  display: flex;
+  align-items: center;
 }
 
-@keyframes linkColorsChange {
-	0% {
-		background: var(--primary);
-	}
-	50% {
-		background: var(--accent);
-	}
-	100% {
-		background: var(--primary);
-	}
+.intro-title__logo {
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 24px;
+  border: 2px solid black;
 }
 
-main {
-	margin-left: 10rem;
+.intro-title__name span {
+  color: var(--primary-text-light);
 }
 
-.intro {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	height: calc(100vh - 7rem);
+.intro-jumbotron {
+  margin-top: 32px;
 }
 
-.intro p {
-	font-size: 10rem;
-	animation: introAnim 700ms ease-out;
-	position: relative;
+.intro-jumbotron h1 {
+  font-size: 96px;
+  font-weight: normal;
+  line-height: 120%;
 }
 
-.intro p:nth-of-type(1) {
-	animation-delay: 300ms;
+.intro-biography {
+  margin-top: 64px;
 }
 
-.intro p:nth-of-type(2) {
-	animation-delay: 400ms;
+.intro-biography p {
+  margin-bottom: 32px;
+  line-height: 140%;
 }
 
-.intro p:nth-of-type(3) {
-	animation-delay: 500ms;
-}
-
-@keyframes introAnim {
-	from {
-		top: -6rem;
-		opacity: 0;
-	}
-
-	to {
-		top: 0;
-		opacity: 1;
-	}
-}
-
-.intro p span {
-	color: white;
-	-webkit-text-stroke: 0.1rem var(--primary-text);
-}
-
-.about {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-
-.about ul {
-	width: 30%;
-	margin-bottom: 4rem;
-}
-
-.about ul h2 {
-	font-size: 3rem;
-	font-weight: bold;
-	margin-bottom: 2.4rem;
-	padding-bottom: 0.4rem;
-	border-bottom: 0.1rem double var(--primary-text);
-}
-
-.about ul li {
-	margin-bottom: 0.8rem;
-}
-
-.about ul li:last-child {
-	margin-bottom: 0;
-}
-
-.about ul li p {
-	font-size: 1.6rem;
-}
-
-.about ul li p span {
-	font-size: 2rem;
-	font-weight: bold;
-}
-
-.portfolio {
-	margin-top: 9rem;
-}
-
-.portfolio h1 {
-	font-size: 7rem;
-	border-bottom: 0.1rem double var(--primary-text);
-	margin-bottom: 2.4rem;
-}
-
-.portfolio ul {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-
-.portfolio-item {
-	width: 48%;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	margin-bottom: 4rem;
-	justify-content: space-between;
-}
-
-.portfolio-item small {
-	display: block;
-	margin-bottom: 1.6rem;
-}
-
-.portfolio-item p {
-	color: var(--primary-text-light);
-	line-height: 24px;
-}
-
-.portfolio-item p a {
-	border: 0;
-	padding: 0;
-	font-size: inherit;
-	border-bottom: 1px solid var(--primary-text);
-}
-
-.portfolio-item a {
-	align-self: flex-end;
-	margin-top: 1.6rem;;
-	padding-bottom: 0.1rem;
-	transition: transform 500ms;
-	border-bottom: 0.1rem solid transparent;
-	font-size: 1.4rem;
-	transition: all 700ms;
-	padding: 12px;
-	border: 1px solid black;
-}
-
-.portfolio-item a:hover{
-	background: rgb(221, 221, 221);
-	border-radius: 300px;
+.intro-biography a {
+  font-weight: bold;
+  text-decoration: underline !important;
 }
 
 @media only screen and (max-device-width: 480px) {
-	body {
-		width: 90%;
-		padding: 2rem 0;
-	}
+  body {
+    width: 90%;
+    padding: 2rem 0;
+  }
 
-	main {
-		margin-left: 5rem;
-	}
+  .intro-jumbotron {
+    margin-top: 16px;
+  }
 
-	.intro {
-		height: calc(100vh - 2rem);
-	}
+  .intro-jumbotron h1 {
+    font-size: 40px;
+  }
 
-	.intro p {
-		font-size: 4.5rem;
-	}
+  p {
+    font-size: 20px;
+  }
 
-	.about {
-		flex-direction: column;
-	}
+  .navbar-menu li {
+    padding: 4px 8px;
+  }
 
-	.about ul {
-		width: 100%;
-	}
+  .navbar-menu a {
+    font-size: 14px;
+  }
 
-	.portfolio h1 {
-		font-size: 4rem;
-	}
-
-	.portfolio ul {
-		flex-direction: column;
-	}
-
-	.portfolio-item {
-		width: 100%;
-	}
+  .intro-title__logo {
+    margin-right: 16px;
+  }
 }
