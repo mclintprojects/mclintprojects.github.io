@@ -1,7 +1,7 @@
 :root {
-  --bg: #ace2df;
-  --primary: #ffe232;
-  --accent: rgb(4, 0, 255);
+  --bg: #fff7e3;
+  --primary: #392c55;
+  --accent: #de6e96;
   --primary-text: #16233e;
   --primary-text-light: #666f80;
 }
@@ -26,7 +26,7 @@
 body {
   color: var(--primary-text);
   background: var(--bg);
-  width: 850px;
+  width: 600px;
   padding: 48px 0;
   margin: auto;
   font-smooth: antialiased;
@@ -58,14 +58,19 @@ b {
 
 .navbar-menu li {
   padding: 8px 16px;
-  border: 2px solid black;
   border-radius: 30px;
   margin-right: 8px;
-  background: white;
+  background: var(--primary);
 }
 
 .navbar-menu li a {
   font-weight: bold;
+  color: var(--bg);
+  transition: all 700ms;
+}
+
+.navbar-menu li a:hover {
+  color: white;
 }
 
 .intro-title {
@@ -75,14 +80,15 @@ b {
 }
 
 .intro-title__logo {
-  height: 40px;
+  height: 48px;
   border-radius: 50%;
   margin-right: 24px;
-  border: 2px solid black;
 }
 
-.intro-title__name span {
+.intro-jumbotron small {
+  display: block;
   color: var(--primary-text-light);
+  margin-top: 8px;
 }
 
 .intro-jumbotron {
@@ -93,6 +99,7 @@ b {
   font-size: 96px;
   font-weight: normal;
   line-height: 120%;
+  color: var(--primary);
 }
 
 .intro-biography {
@@ -106,7 +113,20 @@ b {
 
 .intro-biography a {
   font-weight: bold;
+  color: var(--accent);
   text-decoration: underline !important;
+}
+
+.bubble {
+  position: fixed;
+  border: 1px solid red;
+  width: 1000px;
+  height: 1000px;
+  left: calc(50% - 500px);
+  top: 95%;
+  background: var(--accent);
+  filter: blur(300px);
+  z-index: -1;
 }
 
 @media only screen and (max-device-width: 480px) {
